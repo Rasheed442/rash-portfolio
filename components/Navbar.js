@@ -2,9 +2,17 @@ import React from 'react'
 import {Link} from 'react-scroll'
 import style from "../styles/navbar.module.css"
 import {AiOutlineMail, AiOutlineGithub, AiFillLinkedin} from "react-icons/ai"
+import { useEffect } from 'react'
+import Aos from 'aos'
+import 'aos/dist/aos.css' 
 function Navbar() {
+
+  useEffect(() =>{
+    Aos.init({duration: 2000});
+}, []);
+
   return (
-    <div className={style.container}>
+    <div className={style.container} data-aos='fade-up'>
         <div className={style.main}>
         <Link to="main" spy={true} smooth={true} offset={10} duration={500}><p>/Home</p></Link>
         <Link to="about" spy={true} smooth={true} offset={0} duration={500}><p>/about</p></Link>

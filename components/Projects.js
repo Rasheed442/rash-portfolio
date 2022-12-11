@@ -1,9 +1,16 @@
-import React from 'react'
+import React,{useEffect} from 'react'
 import style from "../styles/project.module.css"
 import Image from 'next/image'
 import Link from 'next/link'
 import {BsFillFolderFill, BsGithub} from 'react-icons/bs'
+import Aos from 'aos'
+import 'aos/dist/aos.css' 
 function Projects() {
+
+    useEffect(() =>{
+        Aos.init({duration: 2000});
+    }, []);
+
   return (
     <>
         <div id='Project' className={style.headline}>
@@ -51,7 +58,7 @@ function Projects() {
 
   <div className={style.grid}>
 
-         <Link href='https://alphatrade.vercel.app'> <div className={style.main}>
+         <Link href='https://alphatrade.vercel.app'> <div className={style.main} data-aos='fade-up' data-aos-duration='1000'>
                 <div className={style.icon}>
                     <BsFillFolderFill size={25}/>
                     <BsGithub size={25}/>
@@ -65,7 +72,7 @@ function Projects() {
           </div></Link>
 
         
-         <Link href='https://tanirestorant.vercel.app'> <div className={style.main}>
+         <Link href='https://tanirestorant.vercel.app'> <div className={style.main} data-aos='fade-up' data-aos-duration='1500'>
                 <div className={style.icon}>
                     <BsFillFolderFill size={25}/>
                     <BsGithub size={25}/>
@@ -78,7 +85,7 @@ function Projects() {
           </div></Link>
 
         
-         <Link href='https://alphaa.vercel.app'> <div className={style.main}>
+         <Link href='https://alphaa.vercel.app'> <div className={style.main} data-aos='fade-up' data-aos-duration='2000'>
                 <div className={style.icon}>
                     <BsFillFolderFill size={25}/>
                     <BsGithub size={25}/>
@@ -91,7 +98,7 @@ function Projects() {
                 <p>React JS || Javascript || Next JS</p>
           </div></Link>
 
-          <Link href='https://rashcloud.vercel.app'><div className={style.main}>
+          <Link href='https://rashcloud.vercel.app'><div className={style.main} data-aos='fade-up' data-aos-duration='2500'>
                 <div className={style.icon}>
                     <BsFillFolderFill size={25}/>
                     <BsGithub size={25}/>
@@ -103,7 +110,7 @@ function Projects() {
                 <p>React JS || Javascript || Next JS</p>
           </div></Link>
 
-          <Link href='https://ransomtrade.vercel.app'><div className={style.main}>
+          <Link href='https://ransomtrade.vercel.app'><div className={style.main} data-aos='fade-up' data-aos-duration='2500'>
                 <div className={style.icon}>
                     <BsFillFolderFill size={25}/>
                     <BsGithub size={25}/>
@@ -116,7 +123,7 @@ function Projects() {
                 <p>React JS || Javascript || Next JS</p>
           </div></Link>
 
-         <Link href='https://hauk.vercel.app'> <div className={style.main}>
+         <Link href='https://hauk.vercel.app'> <div className={style.main} data-aos='fade-up' data-aos-duration='2500'>
                 <div className={style.icon}>
                     <BsFillFolderFill size={25}/>
                     <BsGithub size={25}/>

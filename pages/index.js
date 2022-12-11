@@ -6,7 +6,13 @@ import Navbar from '../components/Navbar'
 import {AiOutlineMail} from "react-icons/ai"
 import {BsFillPlayFill} from "react-icons/bs"
 import Projects from '../components/Projects'
+import { useEffect } from 'react'
+import Aos from 'aos'
+import 'aos/dist/aos.css' 
 export default function Home() {
+  useEffect(() =>{
+    Aos.init({duration: 2000});
+}, []);
   return (
     <div className={style.container}>
       <Head>
@@ -18,10 +24,10 @@ export default function Home() {
      
       <div className={style.main} id='main'>
         <h1>Hi, <span style={{color:" #97DECE"}}>Rasheed</span> here.</h1>
-        <h3>I create stuff sometimes</h3>
-        <p>I'm a software engineer and artist based in Lagos, Nigeria.<br/> I have  great interest in full-stack development,
+        <h3 data-aos='fade-up' data-aos-duration='900'>I create stuff sometimes</h3>
+        <p data-aos='fade-up' data-aos-duration='1000'>I'm a software engineer and artist based in Lagos, Nigeria.<br/> I have  great interest in full-stack development,
            artificial intelligence,<br/> human-computer interactions, and everything in between.</p>
-           <button><AiOutlineMail size={20} style={{}}/> Say hi!</button>
+           <button data-aos='fade-up' data-aos-duration='1500'> <AiOutlineMail size={20} style={{}}/> Say hi!</button>
       </div>
 
 
@@ -43,27 +49,27 @@ export default function Home() {
               <p>Here are some technologies i have been working with:</p>
 
           <div className={style.grid}>
-               <div className={style.play}>
+               <div className={style.play} data-aos='fade-up' data-aos-duration='1000'>
                     <BsFillPlayFill/>
                     <p>javascript ES6+</p>
                </div>
-               <div className={style.play}>
+               <div className={style.play} data-aos='fade-up' data-aos-duration='1000'>
                     <BsFillPlayFill/>
                     <p>React JS</p>
                </div>
-               <div className={style.play}>
+               <div className={style.play} data-aos='fade-up' data-aos-duration='1000'>
                     <BsFillPlayFill/>
                     <p>Node JS</p>
                </div>
-               <div className={style.play}>
+               <div className={style.play} data-aos='fade-up' data-aos-duration='1000'>
                     <BsFillPlayFill/>
                     <p>Next JS</p>
                </div>
-               <div className={style.play}>
+               <div className={style.play} data-aos='fade-up' data-aos-duration='1000'>
                     <BsFillPlayFill/>
                     <p>Mongo db</p>
                </div>
-               <div className={style.play}>
+               <div className={style.play} data-aos='fade-up' data-aos-duration='1000'>
                     <BsFillPlayFill/>
                     <p>HTML/CSS</p>
                </div>
@@ -81,12 +87,12 @@ export default function Home() {
 
 </div>
 
-       <div id='experience' className={style.headline}>
+       <div id='experience' className={style.headline} data-aos='fade-right'>
             <h1>/ experience</h1>
               <div className={style.line}></div>
           </div>
 
-          <div className={style.experience}>
+          <div className={style.experience} data-aos='fade-up'>
               <div>
                 <h1>Software Development Engineer Working <span style={{color:" #97DECE"}}>Remotely</span></h1>
                 <h3>JUL 2022 - Present</h3>
