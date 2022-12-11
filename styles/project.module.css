@@ -87,9 +87,11 @@
 .grid{
   display: grid;
   grid-template-columns: repeat(3, auto);
-  width: 0px;
+  justify-content: center;
   gap: 20px;
-  padding-left: 140px;
+  /* width: 0px;
+  gap: 20px;
+  padding-left: 140px; */
 }
 .footer{
   display: flex;
@@ -114,5 +116,11 @@
   }
   .footer p{
     text-align: center;
+  }
+  .line{
+    display: none;
+  }
+  .grid{
+    margin-right: 70px;
   }
 }
