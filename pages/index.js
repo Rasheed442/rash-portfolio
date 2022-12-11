@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import style from '../styles/Home.module.css'
-import {Link} from 'react-scroll'
+import Link from 'next/link'
 import Navbar from '../components/Navbar'
 import {AiOutlineMail} from "react-icons/ai"
 import {BsFillPlayFill} from "react-icons/bs"
@@ -27,7 +27,7 @@ export default function Home() {
         <h3 data-aos='fade-up' data-aos-duration='900'>I create stuff sometimes</h3>
         <p data-aos='fade-up' data-aos-duration='1000'>I'm a software engineer and artist based in Lagos, Nigeria.<br/> I have  great interest in full-stack development,
            artificial intelligence,<br/> human-computer interactions, and everything in between.</p>
-           <button data-aos='fade-up' data-aos-duration='1500'> <AiOutlineMail size={20} style={{}}/> Say hi!</button>
+          <Link href='mailto:abdulraufrasheed15@gmail.com'><button data-aos='fade-up' data-aos-duration='1500'> <AiOutlineMail size={20} style={{}}/> Say hi!</button></Link> 
       </div>
 
 
@@ -99,7 +99,7 @@ export default function Home() {
               </div>
               <div className={style.play}>
                 <BsFillPlayFill style={{color:" #97DECE"}}/>
-                <p>Collaborate with experienced cross-disciplinary developers to conceive, design,<br/>
+                <p>Collaborated with experienced cross-disciplinary developers to conceive, design,<br/>
                    and bring innovative products and services to market.</p>
               </div>
               <div className={style.play}>

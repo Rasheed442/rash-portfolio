@@ -16,15 +16,10 @@ function Navbar() {
         <div className={style.main}>
         <Link to="main" spy={true} smooth={true} offset={10} duration={500}><p>/Home</p></Link>
         <Link to="about" spy={true} smooth={true} offset={0} duration={500}><p>/about</p></Link>
-        <Link to="experience" spy={true} smooth={true} offset={50} duration={500}><p>/experience</p></Link>
-        <Link to="Project" spy={true} smooth={true} offset={50} duration={500}><p>/Project_Portfolios</p></Link>
+        <Link to="experience" spy={true} smooth={true} offset={0} duration={500}><p>/experience</p></Link>
+        <Link to="Project" spy={true} smooth={true} offset={0} duration={500}><p>/Project_Portfolios</p></Link>
         </div>
 
-        <div className={style.icon}>
-            <AiOutlineMail size={25}/>
-            <AiOutlineGithub size={25}/>
-            <AiFillLinkedin size={25}/>
-        </div>
     </div>
   )
 }

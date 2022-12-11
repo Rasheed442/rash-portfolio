@@ -3,6 +3,7 @@ import style from "../styles/project.module.css"
 import Image from 'next/image'
 import Link from 'next/link'
 import {BsFillFolderFill, BsGithub} from 'react-icons/bs'
+import {AiOutlineMail, AiOutlineGithub, AiFillLinkedin} from "react-icons/ai"
 import Aos from 'aos'
 import 'aos/dist/aos.css' 
 function Projects() {
@@ -140,10 +141,17 @@ function Projects() {
           </div></Link>
     
     </div>
-            <div className={style.footer}>
+
+     <div className={style.footer}>
                 <p>Built and Designed by Abdulrauf Rasheed</p>
                 <p>All rights reserved &copy;</p>
-            </div>
+                <div className={style.socials}>
+            <Link href='mailto:abdulraufrasheed15@gmail.com' style={{color:"#97DECE"}}><AiOutlineMail size={25} /></Link>
+            <Link href='https://github.com/Rasheed442' style={{color:"#97DECE"}}><AiOutlineGithub size={25}/></Link>
+            <Link href='https://www.linkedin.com/in/abdulrauf-rasheed-ba2530222/' style={{color:"#97DECE"}}><AiFillLinkedin size={25}/></Link>
+        </div>
+    </div>
+
     </>
   )
 }

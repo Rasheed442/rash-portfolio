@@ -101,6 +101,7 @@
   .line{
     display: none;
   }
+  
   .about{
     flex-direction: column;
   }
