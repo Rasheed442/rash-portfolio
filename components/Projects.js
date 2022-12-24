@@ -72,6 +72,24 @@ function Projects() {
                 <p>React JS || Javascript || Next JS</p>
           </div></Link>
 
+         <Link href='https://rashdashboard.vercel.app'> <div className={style.main} data-aos='fade-up' data-aos-duration='1000'>
+                <div className={style.icon}>
+                    <BsFillFolderFill size={25}/>
+                    <BsGithub size={25}/>
+                </div>
+                <h3>Rash-Dashboard.</h3>
+                <p>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <br/>
+                    
+                </p>
+
+                <p>React JS || Javascript || Next JS</p>
+          </div></Link>
+
         
          <Link href='https://tanirestorant.vercel.app'> <div className={style.main} data-aos='fade-up' data-aos-duration='1500'>
                 <div className={style.icon}>
@@ -107,6 +125,7 @@ function Projects() {
                 <h3>Ransom Clouds for Hosting.</h3>
                 <p>Cloud Hosting for Pros Deploy your website in less than 60 seconds
                 </p>
+                <br/>
 
                 <p>React JS || Javascript || Next JS</p>
           </div></Link>
@@ -120,7 +139,7 @@ function Projects() {
                 <p>
                     Jump Start Your Portfolio Ransom trade is the easiest place to buy and sell crytocurrency. Sign up and get started today.
                 </p>
-
+                <br/>
                 <p>React JS || Javascript || Next JS</p>
           </div></Link>
 
