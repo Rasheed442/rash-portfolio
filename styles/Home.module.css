@@ -34,7 +34,7 @@
 .aboutheadline{
   display: flex;
   padding: 25px;
-  margin-left: 10rem;
+
   color:  #97DECE;
 
 }
@@ -67,6 +67,7 @@
 .about{
   display: flex;
   justify-content: center;
+  align-items: center;
   gap: 60px;
   padding: 30px;
 }
@@ -91,7 +92,41 @@
 }
 
 
-@media screen and (orientation:portrait) {
+
+@media screen and (max-width:1000px) {
+  .main{
+    padding: 10rem;
+    text-align: center;
+  }
+}
+@media screen and (max-width:835px) {
+  .experience{
+    margin-left: 20px;
+  }
+}
+@media screen and (max-width:659px) {
+  .about{
+    flex-direction: column;
+  }
+  .about img{
+    width: 25rem;
+    height:40rem;
+  }
+  .main{
+    padding: 5rem;
+  }
+}
+@media screen and (max-width:421px) {
+  .about img{
+    width: 20rem;
+    height:30rem;
+  }
+  .main h1{
+    font-size: 2rem;
+  }
+}
+
+/* @media screen and (orientation:portrait) {
   .main{
     padding: 30px;
   }
@@ -116,4 +151,4 @@
   .headline{
     margin-top: 20px;
   }
-}
+} */

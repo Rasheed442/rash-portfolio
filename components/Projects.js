@@ -56,9 +56,8 @@ function Projects() {
                 </figure>
             </div>
   
-
+<h1 style={{margin:"30px", color:"#97DECE"}}>Check Out Project........</h1>
   <div className={style.grid}>
-
          <Link href='https://alphatrade.vercel.app'> <div className={style.main} data-aos='fade-up' data-aos-duration='1000'>
                 <div className={style.icon}>
                     <BsFillFolderFill size={25}/>
@@ -79,12 +78,25 @@ function Projects() {
                 </div>
                 <h3>Rash-Dashboard.</h3>
                 <p>
-                    <br/>
-                    <br/>
+                    Static Site
                     <br/>
                     <br/>
                     <br/>
                     
+                </p>
+
+                <p>React JS || Javascript || Next JS</p>
+          </div></Link>
+
+         <Link href='https://ransomwash.vercel.app'> <div className={style.main} data-aos='fade-up' data-aos-duration='1000'>
+                <div className={style.icon}>
+                    <BsFillFolderFill size={25}/>
+                    <BsGithub size={25}/>
+                </div>
+                <h3>RANSOM-WASH.</h3>
+                <p>
+                High-quality hand wash, affordable prices.
+Get washed right where you parked at your office, apartment, or home.      
                 </p>
 
                 <p>React JS || Javascript || Next JS</p>
@@ -104,18 +116,7 @@ function Projects() {
           </div></Link>
 
         
-         <Link href='https://alphaa.vercel.app'> <div className={style.main} data-aos='fade-up' data-aos-duration='2000'>
-                <div className={style.icon}>
-                    <BsFillFolderFill size={25}/>
-                    <BsGithub size={25}/>
-                </div>
-                <h3>Alpha Auto Detailings..</h3>
-                <p>High quality, convenient and sustainable car care, all through one app. we offer mobile body repair - Mobile valet -
-                    Mobile Mechanics
-                </p>
-
-                <p>React JS || Javascript || Next JS</p>
-          </div></Link>
+         
 
           <Link href='https://rashcloud.vercel.app'><div className={style.main} data-aos='fade-up' data-aos-duration='2500'>
                 <div className={style.icon}>

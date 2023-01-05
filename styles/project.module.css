@@ -8,7 +8,7 @@
   .line{
     background-color: gray;
     height: 2px;
-    width: 20rem;
+    width: 100%;
     margin: 30px;
   }
   
@@ -72,6 +72,7 @@
   padding: 20px;
   display: flex;
   flex-direction: column;
+  transition: 5s;
   border-radius: 10px;
   gap: 25px;
   cursor: pointer;
@@ -108,7 +109,7 @@
 }
 
 
-@media screen and (orientation:portrait) {
+/* @media screen and (orientation:portrait) {
   .slider{
     display: none;
   }
@@ -130,4 +131,49 @@
     margin-right: 70px;
   }
  
+} */
+
+
+@media screen and (max-width:1441px) {
+  .grid{
+    grid-template-columns: repeat(2,auto);
+  }
+  .main{
+    width: 30rem;
+  }
+}
+@media screen and (max-width:993px) {
+  .grid{
+    grid-template-columns: repeat(2,auto);
+  }
+  .main{
+    width: 25rem;
+  }
+}
+@media screen and (max-width:835px) {
+  .grid{
+    grid-template-columns: repeat(2,auto);
+  }
+  .main{
+    width: 17rem;
+  }
+}
+@media screen and (max-width:571px) {
+  .grid{
+    grid-template-columns: auto;
+  }
+  .main{
+    width: 30rem;
+  }
+}
+@media screen and (max-width:497px) {
+
+  .main{
+    width: 20rem;
+  }
+}
+@media screen and (max-width:978px) {
+  .slider{
+    display: none;
+  }
 }
