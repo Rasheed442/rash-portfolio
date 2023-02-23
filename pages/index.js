@@ -78,7 +78,7 @@ export default function Home() {
            video games.<br/> And Love Football.</p>
           </div>
 
-       <Image
+       <img
        priority
        src='/pics.JPG'
        width={300}
