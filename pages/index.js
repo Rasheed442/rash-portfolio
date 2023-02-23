@@ -80,7 +80,7 @@ export default function Home() {
 
        <img
        priority
-       src='/pics.JPG'
+       src='/mypic.jpg'
        width={300}
        height={400}
        />
